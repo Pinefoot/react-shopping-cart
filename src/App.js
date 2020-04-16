@@ -17,7 +17,7 @@ function App() {
 
 	const addItem = event => {
 		
-		
+		setCart ([...cart, event])
 		
 
 		
