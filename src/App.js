@@ -13,6 +13,11 @@ function App() {
 
 	const addItem = item => {
 		// add the given item to the cart
+		this.cart.map(item =>{
+			return setCart({
+				...state
+			})
+		})
 	};
 
 	return (
