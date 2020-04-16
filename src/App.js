@@ -11,13 +11,12 @@ function App() {
 	const [products] = useState(data);
 	const [cart, setCart] = useState([]);
 
-	const addItem = item => {
-		// add the given item to the cart
-		this.cart.map(item =>{
-			return setCart({
-				...state
-			})
-		})
+	const addItem = event => {
+		
+		
+		setCart: [...cart, event]
+
+		
 	};
 
 	return (
