@@ -4,11 +4,13 @@ import {ProductContext} from '../contexts/ProductContext';
 
 // Components
 import Product from './Product';
+import { CartContext } from '../contexts/CartContext';
 
 
 
 const Products = () => {
 	const {products, addItem} = useContext(ProductContext);
+	
 	return (
 		<div className="products-container">
 			{products.map(product => (
@@ -16,6 +18,7 @@ const Products = () => {
 					key={product.id}
 					product={product}
 					addItem={addItem}
+					
 				/>
 			))}
 		</div>
